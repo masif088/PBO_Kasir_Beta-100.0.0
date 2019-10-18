@@ -45,4 +45,10 @@ public class Barang {
 	public void setStok(int stok) {
 		this.stok = stok;
 	}
+	public void dodlan(int julah){
+		this.stok-=julah;
+	}
+	public void tambahbarang(int jumlah){
+		this.stok+=jumlah;
+	}
 }

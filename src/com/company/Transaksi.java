@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Transaksi {
 	ArrayList<BarangMakanan> makanans = new ArrayList<>();
+
 	public Transaksi() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Selamat datang");
@@ -34,7 +35,7 @@ public class Transaksi {
 					pilih=sc.nextInt();
 					System.out.println("masukkan banyaknya varabg");
 					int bnayak =sc.nextInt();
-					makanans.get(pilih).setStok(makanans.get(pilih).getStok()+bnayak);
+					makanans.get(pilih).tambahbarang(bnayak);
 					break;
 				case 4:
 					System.out.println("Jualan barang");
@@ -45,7 +46,7 @@ public class Transaksi {
 					pilih=sc.nextInt();
 					System.out.println("masukkan banyaknya varabg");
 					bnayak =sc.nextInt();
-					makanans.get(pilih).setStok(makanans.get(pilih).getStok()-bnayak);
+					makanans.get(pilih).dodolan(10);
 			}
 
 		}

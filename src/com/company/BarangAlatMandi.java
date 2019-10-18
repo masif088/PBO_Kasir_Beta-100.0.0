@@ -8,4 +8,7 @@ public class BarangAlatMandi extends Barang {
 		this.jenis = jenis;
 		this.aroma = aroma;
 	}
+
+	public BarangAlatMandi() {
+	}
 }

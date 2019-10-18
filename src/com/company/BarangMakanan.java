@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class BarangMakanan extends Barang {
+public class BarangMakanan extends Barang implements  males{
 	private String exp, jenis;
 	Scanner sc = new Scanner(System.in);
 	public BarangMakanan() {
@@ -25,5 +25,19 @@ public class BarangMakanan extends Barang {
 		super(id, nama, harga);
 		this.exp = exp;
 		this.jenis = jenis;
+	}
+
+	public void dodolan(int jumlah){
+		this.stok-=jumlah;
+	}
+
+	@Override
+	public void coba() {
+
+	}
+
+	@Override
+	public void cobaa() {
+
 	}
 }
